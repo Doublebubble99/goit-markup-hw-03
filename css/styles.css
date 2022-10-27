@@ -1,0 +1,337 @@
+:root {
+  --blue-color: #2196f3;
+  --white-color: #ffffff;
+  --light-black-color: #2f303a;
+  --grey-color: #757575;
+  --black-color: #000000;
+  --dark-black-color: #212121;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.list-item {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.studio,
+.portfolio,
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--dark-black-color);
+}
+.hero-header .studio,
+.portfolio-header .portfolio {
+  color: var(--blue-color);
+}
+.hero-header .portfolio .portfolio-header .studio {
+  color: var(--dark-black-color);
+}
+.mail,
+.tel {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+}
+.studio:hover,
+.studio:focus,
+.portfolio:hover,
+.portfolio:focus,
+.contacts:hover,
+.contacts:focus,
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus,
+.place:hover,
+.place:focus {
+  color: var(--blue-color);
+}
+.text-web {
+  color: var(--blue-color);
+}
+.header .text-studio {
+  color: var(--black-color);
+}
+.footer .text-studio {
+  color: var(--white-color);
+}
+.main-text {
+  width: 696px;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.button {
+  box-sizing: inherit;
+  display: flex;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px 32px;
+}
+.button:active,
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+.main {
+  background-color: var(--light-black-color);
+}
+.benefits-head,
+.doing-head,
+.team-head,
+.portfolio-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--dark-black-color);
+}
+.benefits .subhead-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--dark-black-color);
+}
+.benefits .text-item {
+  line-height: calc(24 / 14);
+  color: var(--grey-color);
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team .subhead-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--dark-black-color);
+}
+.team .text-item {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--grey-color);
+}
+.footer {
+  background-color: var(--light-black-color);
+}
+.footer .tel,
+.footer .mail,
+.footer .place {
+  font-style: normal;
+  line-height: calc(24 / 14);
+}
+.footer .tel,
+.footer .mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .place {
+  color: var(--white-color);
+}
+.filters {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--dark-black-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.filters:active,
+.filters:hover,
+.filter:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.card-list .subhead-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--dark-black-color);
+}
+.card-list .text-item {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--grey-color);
+}
+.card-list .list-item {
+  background-color: var(--white-color);
+  border: 1px solid #eeeeee;
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--blue-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding: 94px 0;
+}
+.container {
+  display: flex;
+  width: 1200px;
+  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .list-item {
+  margin-right: 50px;
+}
+.nav .list-item:last-child {
+  margin-right: 0;
+}
+.webstudio {
+  font-family: "Raleway";
+  margin-right: 93px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.list-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  padding-left: 0;
+}
+.list-contacts .list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.container.main {
+  display: block;
+  padding: 200px 0;
+}
+.container.benefits {
+  display: flex;
+}
+.benefits-list {
+  margin: 0;
+  display: inherit;
+  padding-left: 0;
+  column-gap: 30px;
+  row-gap: 10px;
+  flex-grow: 1;
+}
+.benefits-list .list-item {
+  width: 270px;
+}
+.container.doing {
+  margin-top: -94px;
+  display: inherit;
+}
+.doing-head {
+  margin: 0;
+  margin-bottom: 50px;
+}
+.doing-list {
+  display: inline-flex;
+  column-gap: 30px;
+  padding: 0;
+}
+.container.team {
+  display: inherit;
+}
+.team-head {
+  margin-top: 200px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  column-gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+.card-picture {
+  margin-bottom: 30px;
+}
+.team-list .subhead-item {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.team-list .text-item {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.team-list .list-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.container.footer {
+  display: block;
+  padding: 60px 0;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.footer .webstudio {
+  margin-bottom: 20px;
+  margin: 0;
+}
+.footer-list .list-item:first-child,
+.footer-list .list-item:nth-child(even),
+.footer-list .list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
